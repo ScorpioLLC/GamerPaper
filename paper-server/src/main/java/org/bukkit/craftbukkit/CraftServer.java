@@ -278,7 +278,7 @@ public final class CraftServer implements Server {
     private final Logger logger = Logger.getLogger("Minecraft");
     private final ServicesManager servicesManager = new SimpleServicesManager();
     private final CraftScheduler scheduler = new CraftScheduler();
-    private final CraftCommandMap commandMap; // Paper - Move down
+    private final SimpleCommandMap commandMap; // Paper - Move down // GamerPaper - Change from CraftCommandMap -> SimpleCommandMap
     private final SimpleHelpMap helpMap = new SimpleHelpMap(this);
     private final StandardMessenger messenger = new StandardMessenger();
     private final SimplePluginManager pluginManager; // Paper - Move down
